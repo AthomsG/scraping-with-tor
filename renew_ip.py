@@ -5,7 +5,7 @@ import socket
 import socks
 from urllib.request import urlopen
 
-# Create a function to print useful debug information
+# Print useful debug information
 def print_debug_info():
     print("Attempting to connect to TOR Control Port...")
     try:
