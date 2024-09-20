@@ -89,7 +89,7 @@ If you want to use password-based authentication for the control port, you’ll 
 Generate the hashed password with the following command:
 
 ```bash
-tor --hash-password your_password
+tor --hash-password your_password # (we used 'abc123' for the example)
 ```
 
 This will output a hashed password. Add it to your `torrc` like this:
