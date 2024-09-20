@@ -9,7 +9,7 @@ This scraper extracts reviews from Trustpilot using multithreading and Tor for I
 - **Dynamic Headers**: Randomizes user agents and referers to mimic real browser behavior and reduce detection.
 - **Two-Stage Pipeline**:
   - **Stage 1**: Collects reviews without fetching user countries.
-  - **Stage 2**: Optionally fetches user countries when the `--get_countries` flag is used.
+  - **Stage 2**: Optionally fetches user countries when the `--get_countries` flag is used (This significantly slows runtime).
 - **Error Handling and Logging**: Implements robust error handling with retries and logs important events and errors to `scraper.log`.
 - **Command-Line Interface**: Allows customization of scraping parameters via command-line arguments.
 
