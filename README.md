@@ -194,5 +194,3 @@ tail -f /usr/local/var/log/tor.log
 ```
 
 ---
-
-That's it! With these instructions, you can successfully install, configure, and run TOR.
