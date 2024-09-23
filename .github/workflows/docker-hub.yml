@@ -37,14 +37,3 @@ jobs:
     - name: Push Docker image to Docker Hub
       run: |
         docker push ${{ secrets.DOCKER_USERNAME }}/trustpilot-scraper:latest
-
-    - name: Update README with status badge
-      run: |
-        echo "![Build Status](https://github.com/${{ github.repository }}/actions/workflows/docker-build.yml/badge.svg)" > README.md
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git add README.md
-        git commit -m "Update README with build status"
-        git push
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
