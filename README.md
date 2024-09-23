@@ -46,7 +46,7 @@ The scraped data is stored inside the Docker container at `/app/output`. To retr
 
 1. **Find the Container ID:** Run the following command on your host machine to get the container ID:
 ```bash
-scrape --website idealista.com --pages 1 --tor --get_countries
+docker ps -a
 ```
 This will list all running and stopped containers. Note the `CONTAINER ID` of the container where the scraper ran.
 
