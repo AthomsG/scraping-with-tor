@@ -20,6 +20,8 @@ docker build --no-cache -t tor-scraper .
 
 This command will create a Docker image called `tor-scraper`.
 
+or pull from the [Docker Hub](https://hub.docker.com/r/gengiskhan/trustpilot-scraper).
+
 ### 2. Run the Docker Container
 
 To run the Docker container and start an interactive session, use the following command:
